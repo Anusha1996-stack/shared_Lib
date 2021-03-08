@@ -7,7 +7,9 @@ node {
      git branch: "master", url: "https://github.com/Anusha1996-stack/shared_Lib.git" 
   }                  
         
-  
+  stage('secret')
+  {
+    secret 'world'
 /*  stage ('Build') {
      
       sh "mvn clean package -Dmaven.test.skip=True"  
