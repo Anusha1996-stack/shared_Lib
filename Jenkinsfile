@@ -7,15 +7,16 @@ node {
      git branch: "master", url: "https://github.com/Anusha1996-stack/shared_Lib.git" 
   }                  
         
-  }
+  
+  stage ('Build') {
+     
+      sh "mvn clean package sonar:sonar -Dmaven.test.skip=True"  
     
- /*   stages {
-      stage ('Build') {
-        steps {
-          Build()
-        }
-      }
-    } */
+  }
+}
+  
+          
+ 
     
   
 
