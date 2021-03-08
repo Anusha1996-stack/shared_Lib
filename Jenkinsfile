@@ -8,11 +8,11 @@ node {
   }                  
         
   
-  stage ('Build') {
+/*  stage ('Build') {
      
       sh "mvn clean package -Dmaven.test.skip=True"  
     
-  }
+  }*/
 }
   
           
