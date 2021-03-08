@@ -14,13 +14,13 @@ pipeline {
         }
       }
     }
-    stages {
+ /*   stages {
       stage ('Build') {
         steps {
           Build()
         }
       }
-    }
+    } */
     
   }
 }
