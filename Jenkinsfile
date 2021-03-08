@@ -10,7 +10,7 @@ node {
   
   stage ('Build') {
      
-      sh "mvn clean package sonar:sonar -Dmaven.test.skip=True"  
+      sh "mvn clean package -Dmaven.test.skip=True"  
     
   }
 }
