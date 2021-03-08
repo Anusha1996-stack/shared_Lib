@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 @Library('shared_Lib@master') _
 gitCheckout(
                     branch: "master",
