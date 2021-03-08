@@ -2,7 +2,7 @@
 
 @Library('shared_Lib@master') _
 pipeline {
-  agent any {
+  
     
     stages {
       stage ('checkout') {
@@ -21,5 +21,5 @@ pipeline {
       }
     } */
     
-  }
+  
 }
