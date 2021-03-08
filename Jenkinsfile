@@ -9,7 +9,7 @@ node {
         
   stage('secret')
   {
-    secrets 'world'
+    call('world')
   }
 /*  stage ('Build') {
      
