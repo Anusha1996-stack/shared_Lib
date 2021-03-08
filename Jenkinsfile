@@ -9,7 +9,8 @@ node {
         
   stage('secret')
   {
-    secret 'world'
+    secrets 'world'
+  }
 /*  stage ('Build') {
      
       sh "mvn clean package -Dmaven.test.skip=True"  
