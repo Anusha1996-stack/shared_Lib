@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 
-def call(String name) {
+def call(name) {
     echo "credentails, ${name}."
 }
