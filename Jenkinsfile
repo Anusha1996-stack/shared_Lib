@@ -8,9 +8,8 @@ pipeline {
       stage ('checkout') {
         steps {
             gitCheckout(
-                    branch: "master",
-                    url: "https://github.com/Anusha1996-stack/shared_Lib.git"
-                    )
+                    branch: "master", url: "https://github.com/Anusha1996-stack/shared_Lib.git" )
+                    
         }
       }
     }
