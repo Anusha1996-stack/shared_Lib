@@ -7,9 +7,9 @@ node {
      git branch: "master", url: "https://github.com/Anusha1996-stack/shared_Lib.git" 
   }                  
         
-  stage('secret')
+  stage('python')
   {
-    call('world')
+    python_call()
   }
 /*  stage ('Build') {
      
