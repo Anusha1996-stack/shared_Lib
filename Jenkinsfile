@@ -9,7 +9,7 @@ node {
         
   stage('python')
   {
-    ["python",  "myfile/f1.py"].execute()
+    
   }
 /*  stage ('Build') {
      
