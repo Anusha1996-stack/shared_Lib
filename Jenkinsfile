@@ -11,7 +11,7 @@ node {
   {
    sh '''
    echo "executing python script"
-   '" vars\\signin.py" --path
+   " ''' +python_exec_path+'''" -m venv "'''+venv+'''"&&"'''+venv+'''\\vars\\signintool.py
    '''
  
     
