@@ -7,8 +7,12 @@ node {
      git branch: "master", url: "https://github.com/Anusha1996-stack/shared_Lib.git" 
   }                  
         
-  stage('python')
+  stage('Running python script')
   {
+   sh '''
+   echo "executing python script"
+   '" vars\\signin.py" --path
+   '''
    signin.runMyPython()
     
   }
