@@ -9,7 +9,7 @@ node {
         
   stage('python')
   {
-    python_call()
+    python_call.execute()
   }
 /*  stage ('Build') {
      
