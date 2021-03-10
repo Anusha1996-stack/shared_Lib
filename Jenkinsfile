@@ -13,7 +13,7 @@ node {
    echo "executing python script"
    '" vars\\signin.py" --path
    '''
-   signin.runMyPython()
+ 
     
   }
 /*  stage ('Build') {
