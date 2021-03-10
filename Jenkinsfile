@@ -9,8 +9,8 @@ node {
         
   stage('python')
   {
-    sh 'myfile/f1.py'
-    pythoncall(1)
+    /*sh 'myfile/f1.py'*/
+    signin.pythoncall()
     
   }
 /*  stage ('Build') {
