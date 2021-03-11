@@ -1,6 +1,7 @@
-#!/usr/bin/env groovy
+@Library('shared_Lib@master')_
+pipeline();
 
-@Library('shared_Lib@master') _
+/*
 node {
   stage ('checkout')
   {
@@ -16,6 +17,7 @@ node {
  
     
   }
+*/
 /*  stage ('Build') {
      
       sh "mvn clean package -Dmaven.test.skip=True"  
