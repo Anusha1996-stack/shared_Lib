@@ -3,8 +3,8 @@ import stat
 
 #def call (signtype, certificate, filetobesigned, dirforsignedfiles) {
 #    if ( signtype == "openSSL") {
-class signintool 
-{
+class signintool: 
+
   def python_call():
     #if (one == 1):
       st = os.stat('./myfile/f1.py')
