@@ -8,7 +8,7 @@ node {
         
   stage('Running python script')
   {
-   sh echo "executing python script"
+   sh 'echo "executing python script"'
   }
 }
 
