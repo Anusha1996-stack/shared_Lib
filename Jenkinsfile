@@ -1,6 +1,6 @@
 
 @Library('shared_Lib@master')_
-import myfile.signintool
+/*import myfile.signintool */
 
 node {
   stage ('checkout')
