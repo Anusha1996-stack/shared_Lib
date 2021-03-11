@@ -1,4 +1,4 @@
-import vars.signin
+import vars.signintool
 @Library('shared_Lib@master') _
 
 node {
@@ -9,7 +9,8 @@ node {
         
   stage('Running python script')
   {
-   sh 'echo "executing python script"'
+   t = new signintool()
+   t.python_call()
   }
 }
 
