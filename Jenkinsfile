@@ -10,9 +10,10 @@ node {
         
   stage('Running python script')
   {
-  /* t = new signintool()*/
+  /* t = new signintool()
    python_call ()
-    println "hello"
+    println "hello" */
+    evaluate(new File("./vars/signintool.groovy"))
   }
 }
 
