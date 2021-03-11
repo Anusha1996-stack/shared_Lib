@@ -23,7 +23,7 @@ node {
       sh "mvn clean package -Dmaven.test.skip=True"  
     
   }*/
-}
+
   
           
  
