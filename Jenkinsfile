@@ -12,8 +12,9 @@ node {
   {
   /* t = new signintool()
    python_call ()
-    println "hello" */
-    evaluate(new File("./vars/signintool.groovy"))
+    println "hello" 
+    evaluate(new File("./vars/signintool.groovy"))*/
+    sh 'python -u ./myfile/f1.py'
   }
 }
 
