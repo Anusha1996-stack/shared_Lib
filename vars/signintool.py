@@ -10,6 +10,10 @@ import stat
       st = os.stat('./myfile/f1.py')
       os.chmod('./myfile/f1.py', st.st_mode | stat.S_IEXEC)
       os.system('python ./myfile/f1.py ')
+      
+if __name__ == "__main__":
+  python_call()
+
 
 #    }
 #}
