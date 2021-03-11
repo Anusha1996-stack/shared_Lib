@@ -1,5 +1,7 @@
 @Library('shared_Lib@master') _
+pipeline();
 
+/*
 node {
   stage ('checkout')
   {
@@ -15,16 +17,12 @@ node {
  
     
   }
-
+}
+*/
 /*  stage ('Build') {
      
       sh "mvn clean package -Dmaven.test.skip=True"  
     
   }*/
-
-  
-          
- 
-    
   
 
