@@ -9,6 +9,7 @@ node {
   stage('Running python script')
   {
    sh '''
+   #!bin/sh
    echo "executing python script"
    '''
    /* " ''' +python_exec_path+'''" -m venv "'''+venv+'''"&&"'''+venv+'''\\vars\\signintool.py
