@@ -1,5 +1,6 @@
-import vars.signintool
-@Library('shared_Lib@master') _
+
+@Library('shared_Lib@master')_
+import myfile.signintool
 
 node {
   stage ('checkout')
