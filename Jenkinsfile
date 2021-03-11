@@ -8,11 +8,11 @@ node {
         
   stage('Running python script')
   {
-  /* sh '''
+   sh '''
    echo "executing python script"
-   " ''' +python_exec_path+'''" -m venv "'''+venv+'''"&&"'''+venv+'''\\vars\\signintool.py
+   '''
+   /* " ''' +python_exec_path+'''" -m venv "'''+venv+'''"&&"'''+venv+'''\\vars\\signintool.py
    '''*/
-    println "hello, entered python here"
   }
 }
 
