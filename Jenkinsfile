@@ -14,7 +14,7 @@ node {
    python_call ()
     println "hello" 
     evaluate(new File("./vars/signintool.groovy"))*/
-    sh 'python -u C:\Windows\system32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\shared_lib_demo\myfile\f1.py'
+    sh '''python -u myfile/f1.py'''
   }
 }
 
