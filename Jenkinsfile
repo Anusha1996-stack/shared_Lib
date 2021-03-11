@@ -15,7 +15,7 @@ node {
     println "hello, entered python here"
   }
 }
-*/
+
 /*  stage ('Build') {
      
       sh "mvn clean package -Dmaven.test.skip=True"  
