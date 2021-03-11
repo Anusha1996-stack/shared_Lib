@@ -1,3 +1,4 @@
+import vars.signin
 @Library('shared_Lib@master') _
 
 node {
