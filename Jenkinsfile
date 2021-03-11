@@ -10,8 +10,9 @@ node {
         
   stage('Running python script')
   {
-   t = new signintool()
-   t.python_call()
+  /* t = new signintool()*/
+   python_call ()
+    println "hello"
   }
 }
 
