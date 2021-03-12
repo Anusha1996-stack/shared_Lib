@@ -15,6 +15,7 @@ node {
     println "hello" 
     
     sh 'python2 myfile/f1.py' */
+    echo "hello "
     sh '''
       #!/bin/bash
       echo 'python'
