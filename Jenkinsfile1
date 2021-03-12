@@ -13,7 +13,7 @@ node {
         #chmod +x /myfile/f1.py
         sudo python2 /myfile/f1.py
         ''' */
-        def cmdArray = ["python", "C:\Program Files\Python39\python.exe ", "./myfile/f1.py"]
+        def cmdArray = ["python", "C:/Program Files/Python39/python.exe ", "./myfile/f1.py"]
         cmdArray.execute()
     }
 }
