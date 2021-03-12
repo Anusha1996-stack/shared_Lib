@@ -3,14 +3,17 @@ node {
     stage('running python')
     {
         /*sh 'python --version' */
-           def task = "python myfile/f1.py".execute() 
+        
+         /*  def task = "python myfile/f1.py".execute() 
           task.waitFor()
-          println task.text
+          println task.text */
         
         /*sh '''
         #!bin/sh
         #chmod +x /myfile/f1.py
         sudo python2 /myfile/f1.py
         ''' */
+        def cmdArray = ["python", "C:\Program Files\Python39\python.exe ", "./myfile/f1.py"]
+        cmdArray.execute()
     }
 }
