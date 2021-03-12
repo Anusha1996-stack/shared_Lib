@@ -1,1 +1,2 @@
-print("hello world")
+def call ():
+ print("hello world")
