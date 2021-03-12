@@ -1,6 +1,7 @@
 node {
     stage('running python')
     {
-        sh 'python --version'
+        /*sh 'python --version' */
+        def task = "python myfile/f1.py".execute()
     }
 }
