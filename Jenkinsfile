@@ -14,7 +14,7 @@ node {
    python_call ()
     println "hello" 
     evaluate(new File("./vars/signintool.groovy"))*/
-    sh 'sudo python -u myfile/f1.py'
+    sh 'python myfile/f1.py'
   }
 }
 
