@@ -14,8 +14,8 @@ node {
    python_call ()
     println "hello" 
     
-    sh 'python2 myfile/f1.py' */
-    echo "python myfile/f1.py"
+    sh 'python myfile/f1.py' */
+
     sh '''
       #!/bin/bash
       echo 'python'
