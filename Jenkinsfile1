@@ -1,7 +1,13 @@
+
 node {
     stage('running python')
     {
         /*sh 'python --version' */
-        def task = "python myfile/f1.py".execute()
+        /*def task = "python myfile/f1.py".execute() */
+        sh '''
+        #!bin/sh
+        #chmod +x /myfile/f1.py
+        sudo python2 /myfile/f1.py
+        '''
     }
 }
