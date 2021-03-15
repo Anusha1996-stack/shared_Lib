@@ -11,9 +11,14 @@ node {
         /*sh '''
         #!bin/sh
         #chmod +x /myfile/f1.py
-        sudo python2 /myfile/f1.py
+        sudo python /myfile/f1.py    /*ERROR: system can not find file specified*/
         ''' */
+        /*
         def cmdArray = ["python", "C:/Program Files/Python39/python.exe ", "./myfile/f1.py"]
-        cmdArray.execute()
+        cmdArray.execute()       /*ERROR :Scripts not permitted to use staticMethod org.codehaus.groovy.runtime.DefaultGroovyMethods execute 
+                              java.util.List. Administrators can decide whether to approve or reject this signature.*/
+        */
+        
+        "python /myfile/f1.py".execute()
     }
 }
