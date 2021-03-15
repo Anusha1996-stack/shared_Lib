@@ -10,24 +10,9 @@ node {
         
   stage('Running python script')
   {
-  /* t = new signintool()
-   python_call ()
-    println "hello" 
-    
-    sh 'python myfile/f1.py' */
-
-    sh '''
-      #!/bin/bash
-      echo 'python'
-    '''
-    
+  	  
+	def task = "python myfile/p1.py".execute()
+	task.waitfor()
+	println task.txt
   }
 }
-
-/*  stage ('Build') {
-     
-      sh "mvn clean package -Dmaven.test.skip=True"  
-    
-  }*/
-  
-
