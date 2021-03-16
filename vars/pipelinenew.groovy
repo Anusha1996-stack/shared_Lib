@@ -1,11 +1,6 @@
 def call() 
 {
- 
-  
-	println"HEllo";
-  
-}
-	/*pipeline
+	pipeline
 	{
 	
 	stages
@@ -13,7 +8,13 @@ def call()
 	  stage('Checkout')
 	  {
 	   steps
-	   {*/
+	   {
+		println"HEllo";
+	    }
+	   }
+	}
+       }
+}
 
 
 
