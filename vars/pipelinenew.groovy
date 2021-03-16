@@ -1,9 +1,4 @@
-
-@Library('shared_Lib@master')_
-/*import myfile.signintool */
-
-pipelinenew();
-/*node {
+node {
   stage ('checkout')
   {
      git branch: "master", url: "https://github.com/Anusha1996-stack/shared_Lib.git" 
@@ -16,4 +11,4 @@ pipelinenew();
 	task.waitfor()
 	println task.txt
   }
-}*/
+}
