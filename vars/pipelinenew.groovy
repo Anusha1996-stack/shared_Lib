@@ -3,12 +3,9 @@ def call()
   node {
 	stage('python running')
 	{
-		println"HEllo";
-	}
-
-	stage('next python running')
-	{
-		println"World";
+		def task = "python myfile/p1.py".execute()
+	task.waitfor()
+	println task.txt	
 	}
 	}      
 }
