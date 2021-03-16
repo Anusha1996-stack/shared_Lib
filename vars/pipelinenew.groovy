@@ -1,19 +1,12 @@
 def call() 
 {
-	pipeline
+  node {
+	stage('python running')
 	{
-	
-	stages
-	{
-	  stage('Checkout')
-	  {
-	   steps
-	   {
 		println"HEllo";
-	    }
-	   }
 	}
-       }
+
+	}      
 }
 
 
