@@ -1,3 +1,35 @@
+def call() 
+{
+  pipeline
+  {
+	println"HEllo";
+  }
+}
+	/*pipeline
+	{
+	
+	stages
+	{
+	  stage('Checkout')
+	  {
+	   steps
+	   {*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 node {
   stage ('checkout')
   {
@@ -11,4 +43,4 @@ node {
 	task.waitfor()
 	println task.txt
   }
-}
+}*/
