@@ -6,6 +6,10 @@ def call()
 		println"HEllo";
 	}
 
+	stage('next python running')
+	{
+		println"World";
+	}
 	}      
 }
 
