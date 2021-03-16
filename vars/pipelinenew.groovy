@@ -1,9 +1,9 @@
 def call() 
 {
-  pipeline
-  {
+ 
+  
 	println"HEllo";
-  }
+  
 }
 	/*pipeline
 	{
