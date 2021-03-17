@@ -5,9 +5,12 @@ def call()
   node {
 	stage('python running')
 	{
+		println"python calling"
+
 		def task = "python vars/signintool.py".execute()
 		task.waitFor()
-		println task.text	
+		println task.text
+		println"python executed"	
 	}
 	}      
 }
