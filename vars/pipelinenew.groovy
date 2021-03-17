@@ -8,7 +8,7 @@ def call()
 		println"python calling"
 
 		def task = "python vars/signintool.py".execute()
-		task.waitfor()
+		task.waitFor()
 		println task.text
 		println"python executed"	
 	}
