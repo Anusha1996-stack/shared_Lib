@@ -5,7 +5,7 @@ def call()
   node {
 	stage('python running')
 	{
-		def task = "python myfile/p1.py".execute()
+		def task = "python vars/signintool.py".execute()
 		task.waitFor()
 		println task.text	
 	}
