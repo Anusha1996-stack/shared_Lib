@@ -1,8 +1,28 @@
 
 @Library('shared_Lib@master')_
-/*import myfile.signintool */
+
 
 pipelinenew();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*node {
   stage ('checkout')
   {

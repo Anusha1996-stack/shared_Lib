@@ -12,7 +12,8 @@ import stat
       os.system('python ./myfile/f1.py ')
       
 if __name__ == "__main__":
-  python_call()
+    print("calling signintool.py")
+    python_call()
 
 
 #    }
