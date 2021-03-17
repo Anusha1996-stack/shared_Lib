@@ -7,7 +7,7 @@ def call()
 	{
 		def task = "python myfile/p1.py".execute()
 		task.waitFor()
-		/*println task.txt*/	
+		println task.text	
 	}
 	}      
 }
