@@ -6,8 +6,8 @@ def call()
 	stage('python running')
 	{
 		def task = "python myfile/p1.py".execute()
-	task.waitFor()
-	println task.txt	
+		task.waitFor()
+		/*println task.txt*/	
 	}
 	}      
 }
