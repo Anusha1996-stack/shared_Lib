@@ -1,8 +1,8 @@
 
-/*@Library('shared_Lib@master')_
+@Library('shared_Lib@master')_
 
-
-pipelinenew();*/
+msbuild();
+/*pipelinenew();*/
 
 
 
