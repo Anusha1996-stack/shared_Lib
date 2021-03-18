@@ -1,7 +1,7 @@
 
 @Library('shared_Lib@master')_
 
-msbuild();
+msbuild.groovy();
 /*pipelinenew();*/
 
 
