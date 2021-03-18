@@ -3,6 +3,6 @@
 node {
     stage('msbuild')
     {
-            msbuild = $"{clean, rebuild}"
+            bat "Nuget.exe restore your project.sln"
     }
 }
