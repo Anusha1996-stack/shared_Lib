@@ -1,9 +1,8 @@
-/*@Library('shared_Lib@master')_
+@Library('shared_Lib@master')_
+
 node {
-    stage('running python')
+    stage('msbuild')
     {
-          def task = "python myfile/f1.py".execute() 
-          task.waitFor()
-          println task.text    
+            msbuild = $"{clean, rebuild}"
     }
-}*/
+}
