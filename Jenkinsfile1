@@ -3,6 +3,6 @@
 node {
     stage('msbuild')
     {
-            bat "Nuget.exe restore your project.sln"
+            bat "MsBuild.exe restore your project.sln"
     }
 }
