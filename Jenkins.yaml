@@ -1,0 +1,13 @@
+serviceName: "DCA_Enaber"
+
+
+buildEnvironment:
+  agentype: "docker"
+
+
+
+sourcecode:
+  gitrepo: "https://github.com/Anusha1996-stack/shared_Lib.git" #Mandatory
+  gitbranch: "master" #Mandatory
+  submodule: "true,false,false" #Manadtory Boolean true | false
+  #checkoutdirectory: " ,signing,pipeline"
