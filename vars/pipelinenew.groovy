@@ -2,10 +2,10 @@
 
 def call() 
 {
-
+	 stash 'jenkins.yaml, vars'
 	
   node {
-
+	unstash 'jenkins.yaml, vars'
 	def datas = readYaml file:'Jenkins.yml'
 	stage('git checkout')
 	{
