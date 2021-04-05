@@ -1,4 +1,4 @@
-/*java.lang.ProcessImpl.waitfor()*/
+/*java.lang.ProcessImpl.waitfor()
 
 def call() 
 {
@@ -16,6 +16,33 @@ def call()
 		println"checkout completed.........."	
 	}
 	}      
+}*/
+
+def call()
+{
+def datas
+
+pipeline 
+{
+	agent any
+
+stages
+{
+	stage('Checkout')
+	{
+		steps
+		{       bat ''' dir '''
+		        stash 'jenkins.yaml, vars'
+			script
+			{ 
+
+			datas = readYaml (file: 'jenkins.yaml') 
+			}
+		}
+	}
+}
+
+}
 }
 
 
