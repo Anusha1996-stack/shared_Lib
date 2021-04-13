@@ -8,12 +8,14 @@ pipeline
 			label 'master'
 		}
 	}
-node {
-	datas = readYaml (file: 'jenkins.yaml') 
-}
+
 
 stages
 {
+	node {
+	datas = readYaml (file: 'jenkins.yaml') 
+	}
+
 	stage('Checkout')
 	{
 		steps
