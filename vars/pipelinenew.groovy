@@ -1,5 +1,6 @@
 def call(String emaillist)
 {
+def git_repo
 def datas
 pipeline 
 {
