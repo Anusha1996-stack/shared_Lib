@@ -37,10 +37,7 @@ stages
         {
                 steps
                 {
-			script
-			{
-				println datas.compile.buildtool	
-			}
+			println datas.compile.buildtool	
 		}
 	}
 }
