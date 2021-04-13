@@ -38,7 +38,7 @@ stages
         {
                 steps
                 {
-			println datas.compile.buildtool	
+			//println datas.compile.buildtool	
 		}
 	}
 }
