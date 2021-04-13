@@ -11,3 +11,6 @@ sourcecode:
   gitbranch: "master" #Mandatory
   submodule: "true,false,false" #Manadtory Boolean true | false
   #checkoutdirectory: " ,signing,pipeline"
+
+compile:
+ buildtool:"msbuild, make"
