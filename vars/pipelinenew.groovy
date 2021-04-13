@@ -48,7 +48,8 @@ stages
 			script{
 				String build_tool = datas.compile.buildtool
 				println build_tool
-				println "compile running"	
+				println "compile running"
+			}	
 		}
 	}
 }
