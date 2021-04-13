@@ -19,7 +19,7 @@ checkout([
 	])
 */
 
-def call(String gitURLString, String branchID, String gitUserID, String submodule) //String clonedir)
+def call(String gitURLString, String branchID, /*String gitUserID,*/ String submodule) //String clonedir)
 {
 	dir(branchID)
 	{

@@ -32,13 +32,16 @@ stages
 			println " Reading jenkins.yaml file successfully"
 
 			String git_repo = datas.sourcecode.gitrepo
+			String git_branch = datas.sourcecode.gitbranch
+			//String git_UserID = datas.sourcecode.gitUserID
+			String sub_module = datas.sourcecode.submodule
     			String[] gitrepo;
     			gitrepo = git_repo.split(',') ;
     			
-				for(int i = 0; i < gitrepo.size(); i++)
-				{
-					println gitrepo[i] 
-				}
+				//for(int i = 0; i < gitrepo.size(); i++)
+				//{
+					gitCheckout(git_repo, git_branch, /*git_UserID,*/ sub_module) 
+				//}
 
 			
 			}
