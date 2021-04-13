@@ -40,10 +40,10 @@ stages
     			
 				//for(int i = 0; i < gitrepo.size(); i++)
 				//{
-					gitCheckout(git_repo, git_branch, /*git_UserID,*/ sub_module) 
+					gitCheckout(git_repo[0], git_branch, /*git_UserID,*/ sub_module) 
 				//}
 
-			
+			println"checkout completed"
 			}
 		}
 	}
