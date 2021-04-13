@@ -3,7 +3,11 @@ def call(String emaillist)
 def datas
 pipeline 
 {
-	    
+	agent {
+		node {
+			none
+		}
+	}
 
 stages
 {
