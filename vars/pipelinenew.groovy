@@ -45,11 +45,11 @@ stages
         {
                 steps
                 {
-			script{
+			//script{
 				String build_tool = datas.compile.buildtool
 				println build_tool
 				println "compile running"
-			}	
+			//}	
 		}
 	}
 }
