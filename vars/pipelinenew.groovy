@@ -1,6 +1,9 @@
 def call(String emaillist)
 {
 def datas
+	node {
+		datas = readYaml (file: 'jenkins.yaml') 
+	}
 pipeline 
 {
 	agent {
@@ -12,9 +15,7 @@ pipeline
 
 stages
 {
-	node {
-	datas = readYaml (file: 'jenkins.yaml') 
-	}
+	
 
 	stage('Checkout')
 	{
