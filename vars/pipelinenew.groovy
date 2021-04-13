@@ -1,6 +1,5 @@
 def call(String emaillist)
 {
-def String git_repo
 def datas
 pipeline 
 {
@@ -27,10 +26,10 @@ stages
     			String[] gitrepo;
     			gitrepo = git_repo.split(',') ;
     			
-			/*	for(int i = 0; i < gitrepo.size(); i++)
+				for(int i = 0; i < gitrepo.size(); i++)
 				{
 					println gitrepo[i] 
-				}*/
+				}
 			}
 		}
 	}
@@ -40,10 +39,7 @@ stages
                 {
 			script
 			{
-				for(int i = 0; i < gitrepo.size(); i++)
-				{
-					println gitrepo[i] 
-				}		
+				println datas.compile.buildtool	
 			}
 		}
 	}
