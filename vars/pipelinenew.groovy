@@ -1,9 +1,9 @@
 def call(String emaillist)
 {
 def datas
-	node {
+	/*node {
 		datas = readYaml (file: 'jenkins.yaml') 
-	}
+	}*/
 pipeline 
 {
 	agent {
@@ -25,7 +25,7 @@ stages
 			script
 			{ 
 
-			//datas = readYaml (file: 'jenkins.yaml') 
+			datas = readYaml (file: 'jenkins.yaml') 
 			println " Reading jenkins.yaml file successfully"
 
 			String git_repo = datas.sourcecode.gitrepo
