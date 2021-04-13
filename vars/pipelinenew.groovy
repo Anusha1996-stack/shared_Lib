@@ -30,7 +30,9 @@ stages
 				{
 					println gitrepo[i] 
 				}
-			println datas.compile.buildtool	
+
+			String build_tool = datas.compile.buildtool
+			println build_tool	
 			}
 		}
 	}
