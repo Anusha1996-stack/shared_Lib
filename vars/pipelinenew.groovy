@@ -1,6 +1,6 @@
 def call(String emaillist)
 {
-def datas
+def {$datas}
 	node {
 		script {
 
