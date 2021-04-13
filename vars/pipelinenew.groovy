@@ -8,6 +8,9 @@ pipeline
 			label 'master'
 		}
 	}
+node {
+	datas = readYaml (file: 'jenkins.yaml') 
+}
 
 stages
 {
@@ -19,7 +22,7 @@ stages
 			script
 			{ 
 
-			datas = readYaml (file: 'jenkins.yaml') 
+			//datas = readYaml (file: 'jenkins.yaml') 
 			println " Reading jenkins.yaml file successfully"
 
 			String git_repo = datas.sourcecode.gitrepo
