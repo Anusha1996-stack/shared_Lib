@@ -37,11 +37,13 @@ stages
         {
                 steps
                 {
-			for(int i = 0; i < gitrepo.size(); i++)
+			script
 			{
-				println gitrepo[i] 
-			}		
-			
+				for(int i = 0; i < gitrepo.size(); i++)
+				{
+					println gitrepo[i] 
+				}		
+			}
 		}
 	}
 }
