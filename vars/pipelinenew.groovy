@@ -49,8 +49,9 @@ stages
                 steps
                 {
 			script{
-				String build_tool = datas.compile.buildtool
-				println build_tool
+				String[] build_tool = datas.compile.buildtool
+				
+				println build_tool[0]
 				println "compile running"
 			}	
 		}
