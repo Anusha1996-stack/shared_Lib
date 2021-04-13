@@ -13,4 +13,4 @@ sourcecode:
   #checkoutdirectory: " ,signing,pipeline"
 
 compile:
- buildtool:"msbuild, make"
+ buildtool:"msbuild"

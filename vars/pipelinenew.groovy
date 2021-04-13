@@ -30,6 +30,7 @@ stages
 				{
 					println gitrepo[i] 
 				}
+			println datas.compile.buildtool	
 			}
 		}
 	}
