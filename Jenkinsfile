@@ -1,9 +1,20 @@
 
-@Library('shared_Lib@master')_
-
-
-pipelinenew();
-
+pipeline 
+{
+	agent any
+	
+	stages
+	{
+		stage('Parallel') {
+			script{
+				parallel 
+				(
+					"private": { echo "private"},
+					"public": {echo "public"}
+					)
+			}
+		}
+	}
 
 
 
