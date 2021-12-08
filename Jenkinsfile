@@ -1,40 +1,4 @@
-
-pipeline 
-{
-	agent any
-	
-	stages
-	{
-		stage('Parallel') {
-			script{
-				parallel 
-				(
-					"private": { echo "private"},
-					"public": {echo "public"}
-					)
-			}
-		}
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*node {
+node {
   stage ('checkout')
   {
      git branch: "master", url: "https://github.com/Anusha1996-stack/shared_Lib.git" 
@@ -47,4 +11,4 @@ pipeline
 	task.waitfor()
 	println task.txt
   }
-}*/
+}
